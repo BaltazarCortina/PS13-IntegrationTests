@@ -33,9 +33,32 @@ export const checkEmail = (email) => {
 
 // console.log(checkEmail());
 // console.log(checkEmail(''));
+
 // console.log(checkEmail('@'));
-// console.log(checkEmail('test@.com'));
-// console.log(checkEmail('test@radiumrocket.com'));
+// console.log(checkEmail('email.com'));
+// console.log(checkEmail('@something.com'));
+// console.log(checkEmail('@something'));
+// console.log(checkEmail('email@'));
+// console.log(checkEmail('email@.com'));
+
+// console.log(checkEmail('email@something.com'));
+// console.log(checkEmail('email@something.else.com'));
+// console.log(checkEmail('email123@something456.com'));
+// console.log(checkEmail('email@something.com1'));
+// console.log(checkEmail('email!@something.com'));
+// console.log(checkEmail('email@something!.com'));
+// console.log(checkEmail('email@something.com!'));
+
+// console.log(checkEmail(123));
+// console.log(checkEmail([123]));
+// console.log(checkEmail([1, 2, 3]));
+// console.log(checkEmail({'a':'1'}));
+// console.log(checkEmail({'a':'1','b':'2'}));
+// console.log(checkEmail(undefined));
+// console.log(checkEmail(null));
+// console.log(checkEmail(true));
+// console.log(checkEmail(false));
+
 
 /**
  * Calculate area of a figure
@@ -67,14 +90,38 @@ export const calculateArea = (figure, number1, number2 = 0) => {
 }
 
 // console.log(calculateArea());
-// console.log(calculateArea('square'));
-// console.log(calculateArea('square', 'hola', 3));
-// console.log(calculateArea('square', 3, 'hola'));
-// console.log(calculateArea('square', 3, 3));
-// console.log(calculateArea('rectangle', 3, 4));
+// console.log(calculateArea('triangle'));
+// console.log(calculateArea('Circle'));
+// console.log(calculateArea('SqUaRe'));
+// console.log(calculateArea('hexagon'));
+
+// // console.log(calculateArea(123));
+// // console.log(calculateArea(1, 2, 3));
+
+// console.log(calculateArea('square', 'four', 4));
+// console.log(calculateArea('square', 7, 'five'));
+// console.log(calculateArea('circle', 7, 'five'));
+
+// console.log(calculateArea('square', 4, 5));
+// console.log(calculateArea('rectangle', 2, 6));
 // console.log(calculateArea('triangle', 5, 4));
-// console.log(calculateArea('square', 5)); // number two takes 0 as default value
-// console.log(calculateArea('circle', 4)); // number two takes 0 as default value
+// console.log(calculateArea('square', 5));
+// console.log(calculateArea('circle', 3));
+// console.log(calculateArea('square', 5.5, 2.5));
+// console.log(calculateArea('rectangle', 4, -5));
+// console.log(calculateArea('triangle', -8, 3));
+
+// console.log(calculateArea('rectangle', '2', '5'));
+// console.log(calculateArea('square', [2], [3]));
+// console.log(calculateArea('rectangle', [1, 2], [3]));
+// console.log(calculateArea('triangle', [2], [0]));
+// console.log(calculateArea('circle', [1, 2], [3]));
+// console.log(calculateArea('circle', [2], [0]));
+
+// console.log(calculateArea(undefined, undefined, undefined));
+// console.log(calculateArea(null, null, null));
+// console.log(calculateArea('square', null, null));
+// console.log(calculateArea('triangle', undefined, undefined));
 
 /**
  * This function sum two numbers and detects if the result if grather than the third number
