@@ -142,9 +142,22 @@ export const sumGratherThan = (number1, number2, number3) => {
 }
 
 // console.log(sumGratherThan());
-// console.log(sumGratherThan([], undefined));
-// console.log(sumGratherThan(1, 5, 10));
-// console.log(sumGratherThan(1, 5, 5));
+// console.log(sumGratherThan(1));
+// console.log(sumGratherThan(2, 3));
+// console.log(sumGratherThan(2, 3, 4));
+// console.log(sumGratherThan(2, 3, 5));
+// console.log(sumGratherThan(2, 3, 6));
+// console.log(sumGratherThan(null, null, null));
+// console.log(sumGratherThan(2, null, null));
+// console.log(sumGratherThan(null, null, 5));
+// console.log(sumGratherThan(undefined, undefined, undefined));
+// console.log(sumGratherThan(undefined, 3, undefined));
+// console.log(sumGratherThan(undefined, undefined, 6));
+// console.log(sumGratherThan('1', '2', '5'));
+// console.log(sumGratherThan('', 2, 3));
+// console.log(sumGratherThan([3], [2], [4]));
+// console.log(sumGratherThan(2, 5, undefined));
+// console.log(sumGratherThan(1, 2, []));
 
 /**
  * This function returns the intersection between two arrays
@@ -163,11 +176,22 @@ export const intersectionBetweenArrays = (array1, array2) => {
   return intersection;
 }
 
-// console.log(intersectionBetweenArrays())
-// console.log(intersectionBetweenArrays([1,2,3]));
-// console.log(intersectionBetweenArrays([1,2,3], [1]));
-// console.log(intersectionBetweenArrays([1,2,3], [5]));
-// console.log(intersectionBetweenArrays(['test',2,3], ['test', 5]));
+// console.log(intersectionBetweenArrays());
+// console.log(intersectionBetweenArrays([]));
+// console.log(intersectionBetweenArrays([1,2,3,4]));
+// console.log(intersectionBetweenArrays([1,2,3,4], [2]));
+// console.log(intersectionBetweenArrays([1,2,3,4], [7]));
+// console.log(intersectionBetweenArrays([1,2,3,4], []));
+// console.log(intersectionBetweenArrays(['a',4,5], ['a',2]));
+// console.log(intersectionBetweenArrays([1,2,null,undefined,true,'a','b'], [true,undefined,'b',null]));
+// console.log(intersectionBetweenArrays([1,2,3,4], 2));
+// console.log(intersectionBetweenArrays([1,2,3,4], [2,3], [3]));
+// console.log(intersectionBetweenArrays(null, null));
+// console.log(intersectionBetweenArrays(undefined, undefined));
+// console.log(intersectionBetweenArrays(123, 1));
+// console.log(intersectionBetweenArrays('abc', 'c'));
+
+
 
 /**
  * Sort an array based on an specific key
@@ -188,11 +212,31 @@ export const sortArrayOfObjectsByKey = (array, key) => {
   return sortArrayByKey(array, key);
 }
 
-// console.log(sortArrayOfObjectsByKey([{ name: 'Guille' }, { name: 'Rodrigo' }, { name: 'David' }], 'name'));
-// console.log(sortArrayOfObjectsByKey(undefined, 'name'));
-// console.log(sortArrayOfObjectsByKey([{ name: 'Guille' }, { name: 'Rodrigo' }, { name: 'David' }], 1));
-// console.log(sortArrayOfObjectsByKey([{ name: 'Guille' }, { name: 'Rodrigo' }, { name: 'David' }], ''));
-// console.log(sortArrayOfObjectsByKey([{ name: 'Guille' }, { name: 'Rodrigo' }, { noName: 'NoName' }], 'name'));
+// console.log(sortArrayOfObjectsByKey());
+// console.log(sortArrayOfObjectsByKey([{id: 1}, {id: 3}, {id: 2}]));
+// console.log(sortArrayOfObjectsByKey([{id: 1}, {id: 3}, {id: 2}], 'number'));
+// console.log(sortArrayOfObjectsByKey([], 'id'));
+// console.log(sortArrayOfObjectsByKey('id'));
+// console.log(sortArrayOfObjectsByKey([{id: 1}, {id: 3}, {id: 2}], 'id'));
+// console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], 'id'));
+// console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], 'letter'));
+// console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], ''));
+// console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], 1));
+// console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], ['id']));
+// console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], ['id','letter']));
+// console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], undefined));
+// console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], null));
+console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}, {id: 2, letter: 'd'}], 'id'));
+console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'd'}, {id: 2, letter: 'a'}], 'id'));
+// console.log(sortArrayOfObjectsByKey(undefined, 'id'));
+// console.log(sortArrayOfObjectsByKey(null, 'id'));
+// console.log(sortArrayOfObjectsByKey('id: 1, id: 3, id: 2', 'id'));
+// console.log(sortArrayOfObjectsByKey([1, 3, 2], 'id'));
+// console.log(sortArrayOfObjectsByKey(['id: 1', 'id: 3', 'id: 2'], 'id'));
+
+
+
+
 
 /**
  * Should return the number of odd and even numbers
@@ -213,7 +257,17 @@ export const numberOfOddAndEvenNumbers = (array) => {
   }
 }
 
-// console.log(numberOfOddAndEvenNumbers([1, 4, 5, 8, 9]));
-// console.log(numberOfOddAndEvenNumbers([1.3, 4.2]));
 // console.log(numberOfOddAndEvenNumbers());
-// console.log(numberOfOddAndEvenNumbers([1, 'string']));
+// console.log(numberOfOddAndEvenNumbers(1,2,3,4,5));
+// console.log(numberOfOddAndEvenNumbers('1 2 3 4 5'));
+// console.log(numberOfOddAndEvenNumbers(['1','2','3']));
+// console.log(numberOfOddAndEvenNumbers([1,2,3,4,5]));
+// console.log(numberOfOddAndEvenNumbers([1.2, 2.4, 3.7, 4, 5.1]));
+// console.log(numberOfOddAndEvenNumbers([1,3,5,7,9]));
+// console.log(numberOfOddAndEvenNumbers([2,4,6,8]));
+// console.log(numberOfOddAndEvenNumbers([0]));
+// console.log(numberOfOddAndEvenNumbers([]));
+// console.log(numberOfOddAndEvenNumbers([1, '2', '3', 4, 5]));
+// console.log(numberOfOddAndEvenNumbers([1, 2, undefined, null, 5]));
+// console.log(numberOfOddAndEvenNumbers(null));
+// console.log(numberOfOddAndEvenNumbers(undefined));
