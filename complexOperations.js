@@ -33,14 +33,12 @@ export const checkEmail = (email) => {
 
 // console.log(checkEmail());
 // console.log(checkEmail(''));
-
 // console.log(checkEmail('@'));
 // console.log(checkEmail('email.com'));
 // console.log(checkEmail('@something.com'));
 // console.log(checkEmail('@something'));
 // console.log(checkEmail('email@'));
 // console.log(checkEmail('email@.com'));
-
 // console.log(checkEmail('email@something.com'));
 // console.log(checkEmail('email@something.else.com'));
 // console.log(checkEmail('email123@something456.com'));
@@ -48,7 +46,6 @@ export const checkEmail = (email) => {
 // console.log(checkEmail('email!@something.com'));
 // console.log(checkEmail('email@something!.com'));
 // console.log(checkEmail('email@something.com!'));
-
 // console.log(checkEmail(123));
 // console.log(checkEmail([123]));
 // console.log(checkEmail([1, 2, 3]));
@@ -58,7 +55,6 @@ export const checkEmail = (email) => {
 // console.log(checkEmail(null));
 // console.log(checkEmail(true));
 // console.log(checkEmail(false));
-
 
 /**
  * Calculate area of a figure
@@ -94,14 +90,11 @@ export const calculateArea = (figure, number1, number2 = 0) => {
 // console.log(calculateArea('Circle'));
 // console.log(calculateArea('SqUaRe'));
 // console.log(calculateArea('hexagon'));
-
-// // console.log(calculateArea(123));
-// // console.log(calculateArea(1, 2, 3));
-
+// console.log(calculateArea(123));
+// console.log(calculateArea(1, 2, 3));
 // console.log(calculateArea('square', 'four', 4));
 // console.log(calculateArea('square', 7, 'five'));
 // console.log(calculateArea('circle', 7, 'five'));
-
 // console.log(calculateArea('square', 4, 5));
 // console.log(calculateArea('rectangle', 2, 6));
 // console.log(calculateArea('triangle', 5, 4));
@@ -110,14 +103,12 @@ export const calculateArea = (figure, number1, number2 = 0) => {
 // console.log(calculateArea('square', 5.5, 2.5));
 // console.log(calculateArea('rectangle', 4, -5));
 // console.log(calculateArea('triangle', -8, 3));
-
 // console.log(calculateArea('rectangle', '2', '5'));
 // console.log(calculateArea('square', [2], [3]));
 // console.log(calculateArea('rectangle', [1, 2], [3]));
 // console.log(calculateArea('triangle', [2], [0]));
 // console.log(calculateArea('circle', [1, 2], [3]));
 // console.log(calculateArea('circle', [2], [0]));
-
 // console.log(calculateArea(undefined, undefined, undefined));
 // console.log(calculateArea(null, null, null));
 // console.log(calculateArea('square', null, null));
@@ -191,8 +182,6 @@ export const intersectionBetweenArrays = (array1, array2) => {
 // console.log(intersectionBetweenArrays(123, 1));
 // console.log(intersectionBetweenArrays('abc', 'c'));
 
-
-
 /**
  * Sort an array based on an specific key
  * @param {Array} array - This array should be an array of objects
@@ -226,17 +215,13 @@ export const sortArrayOfObjectsByKey = (array, key) => {
 // console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], ['id','letter']));
 // console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], undefined));
 // console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}], null));
-console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}, {id: 2, letter: 'd'}], 'id'));
-console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'd'}, {id: 2, letter: 'a'}], 'id'));
+// console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'a'}, {id: 2, letter: 'd'}], 'id'));
+// console.log(sortArrayOfObjectsByKey([{id: 1, letter: 'c'}, {id: 3, letter: 'b'}, {id: 2, letter: 'd'}, {id: 2, letter: 'a'}], 'id'));
 // console.log(sortArrayOfObjectsByKey(undefined, 'id'));
 // console.log(sortArrayOfObjectsByKey(null, 'id'));
 // console.log(sortArrayOfObjectsByKey('id: 1, id: 3, id: 2', 'id'));
 // console.log(sortArrayOfObjectsByKey([1, 3, 2], 'id'));
 // console.log(sortArrayOfObjectsByKey(['id: 1', 'id: 3', 'id: 2'], 'id'));
-
-
-
-
 
 /**
  * Should return the number of odd and even numbers
